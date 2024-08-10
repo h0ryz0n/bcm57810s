@@ -1,9 +1,9 @@
-tinkering with my BCM57810S based NIC
-I'll keep here all files I manage to compile for my distros
-
-you can find all informations on these links
-original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC
-patch files: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches
-opnsense: https://bxe.c-maxwell.net/en/Opnsense/modified_modules
-
-thanks to everyone who contributed
+tinkering with my BCM57810S based NIC  
+I'll keep here all my outputs and all the infos
+  
+you can find all informations on these links, thanks for original posters and all the people who contributes  
+original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC  
+patch files: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches  
+opnsense: https://forum.opnsense.org/index.php?topic=13664.msg62951#msg62951  
+opnsense pre-compiled: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
+  
