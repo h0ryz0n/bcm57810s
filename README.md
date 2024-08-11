@@ -1,4 +1,4 @@
-tinkering with my BCM57810S based NIC and Huawei MA7
+tinkering with my BCM57810S based NIC and Huawei MA5671A
 I'll keep here all my outputs and all the infos
   
 you can find all informations on these links, thanks to original posters and all the people who contributes  
