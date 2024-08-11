@@ -1,4 +1,4 @@
-tinkering with my BCM57810S based NIC  
+tinkering with my BCM57810S based NIC and Huawei MA7
 I'll keep here all my outputs and all the infos
   
 you can find all informations on these links, thanks to original posters and all the people who contributes  
@@ -8,3 +8,4 @@ patch files: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches
 opnsense: https://forum.opnsense.org/index.php?topic=13664.msg62951#msg62951  
 opnsense pre-compiled: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
   
+MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39696.0  
