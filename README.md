@@ -9,3 +9,5 @@ opnsense: https://forum.opnsense.org/index.php?topic=13664.msg62951#msg62951
 opnsense pre-compiled: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
   
 MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39696.0  
+  
+freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
