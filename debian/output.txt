@@ -1,6 +1,17 @@
+~# lsb_release -a
+No LSB modules are available.
+Distributor ID: Debian
+Description:    Debian GNU/Linux 12 (bookworm)
+Release:        12
+Codename:       bookworm
+
+~# uname -r
+6.1.0-23-amd64
+
+
 ### before ###
 
-# ethtool enp2s0f0
+-# ethtool enp2s0f0
 Settings for enp2s0f0:
         Supported ports: [ FIBRE ]
         Supported link modes:   1000baseT/Full
@@ -24,7 +35,7 @@ Settings for enp2s0f0:
 
         Link detected: no
 
-# ethtool enp2s0f1
+-# ethtool enp2s0f1
 Settings for enp2s0f1:
         Supported ports: [ FIBRE ]
         Supported link modes:   1000baseT/Full
@@ -50,7 +61,7 @@ Settings for enp2s0f1:
 
 ### after ###
 
-# ethtool enp2s0f0
+-# ethtool enp2s0f0
 Settings for enp2s0f0:
         Supported ports: [ FIBRE ]
         Supported link modes:   1000baseT/Full
@@ -73,7 +84,7 @@ Settings for enp2s0f0:
         Wake-on: g
         Current message level: 0x00000000 (0)
 
-# ethtool enp2s0f1
+-# ethtool enp2s0f1
 Settings for enp2s0f1:
         Supported ports: [ FIBRE ]
         Supported link modes:   1000baseT/Full
