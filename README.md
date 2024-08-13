@@ -1,6 +1,11 @@
-tinkering with my network board  
-the hardware is a a 10Gtek® 10Gb PCI-E NIC Dual SFP+ Port board, chipset is a Broadcom BCM57810S  
-I'll keep here all my outputs and all the infos
+playing with my network board, firmwares and drivers  
+  
+hardware is a a 10Gtek® 10Gb PCI-E NIC Dual SFP+ Port board, chipset is a Broadcom BCM57810S  
+![71Qot0S9JdL _AC_SL1500_](https://github.com/user-attachments/assets/b9e1257a-e287-47b8-9a03-187c83ac40f3)
+server is a pure kvm/qemu debian hypervisor and board ports are configured in passthrough to a opnsense guest  
+as lots of 10G boards support just 1G/10G negotiation, it needs some tinkering to unlock 2.5G  
+  
+I'll keep here all my outputs and all the infos  
   
 you can find all informations on these links, thanks to original posters and all the people who contributes  
 original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC  
