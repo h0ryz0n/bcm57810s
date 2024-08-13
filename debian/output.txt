@@ -1,0 +1,99 @@
+### before ###
+
+# ethtool enp2s0f0
+Settings for enp2s0f0:
+        Supported ports: [ FIBRE ]
+        Supported link modes:   1000baseT/Full
+                                10000baseT/Full
+        Supported pause frame use: Symmetric Receive-only
+        Supports auto-negotiation: No
+        Supported FEC modes: Not reported
+        Advertised link modes:  10000baseT/Full
+        Advertised pause frame use: No
+        Advertised auto-negotiation: No
+        Advertised FEC modes: Not reported
+        Speed: Unknown!
+        Duplex: Unknown! (255)
+        Auto-negotiation: off
+        Port: FIBRE
+        PHYAD: 1
+        Transceiver: internal
+        Supports Wake-on: g
+        Wake-on: g
+        Current message level: 0x00000000 (0)
+
+        Link detected: no
+
+# ethtool enp2s0f1
+Settings for enp2s0f1:
+        Supported ports: [ FIBRE ]
+        Supported link modes:   1000baseT/Full
+                                10000baseT/Full
+        Supported pause frame use: Symmetric Receive-only
+        Supports auto-negotiation: No
+        Supported FEC modes: Not reported
+        Advertised link modes:  Not reported
+        Advertised pause frame use: No
+        Advertised auto-negotiation: No
+        Advertised FEC modes: Not reported
+        Speed: Unknown!
+        Duplex: Unknown! (255)
+        Auto-negotiation: on
+        Port: FIBRE
+        PHYAD: 1
+        Transceiver: internal
+        Supports Wake-on: g
+        Wake-on: g
+        Current message level: 0x00000000 (0)
+
+        Link detected: no
+
+### after ###
+
+# ethtool enp2s0f0
+Settings for enp2s0f0:
+        Supported ports: [ FIBRE ]
+        Supported link modes:   1000baseT/Full
+                                10000baseT/Full
+                                2500baseX/Full
+        Supported pause frame use: Symmetric Receive-only
+        Supports auto-negotiation: No
+        Supported FEC modes: Not reported
+        Advertised link modes:  10000baseT/Full
+        Advertised pause frame use: No
+        Advertised auto-negotiation: No
+        Advertised FEC modes: Not reported
+        Speed: Unknown!
+        Duplex: Unknown! (255)
+        Auto-negotiation: off
+        Port: FIBRE
+        PHYAD: 1
+        Transceiver: internal
+        Supports Wake-on: g
+        Wake-on: g
+        Current message level: 0x00000000 (0)
+
+# ethtool enp2s0f1
+Settings for enp2s0f1:
+        Supported ports: [ FIBRE ]
+        Supported link modes:   1000baseT/Full
+                                10000baseT/Full
+                                2500baseX/Full
+        Supported pause frame use: Symmetric Receive-only
+        Supports auto-negotiation: No
+        Supported FEC modes: Not reported
+        Advertised link modes:  2500baseX/Full
+        Advertised pause frame use: No
+        Advertised auto-negotiation: No
+        Advertised FEC modes: Not reported
+        Speed: Unknown!
+        Duplex: Unknown! (255)
+        Auto-negotiation: off
+        Port: FIBRE
+        PHYAD: 1
+        Transceiver: internal
+        Supports Wake-on: g
+        Wake-on: g
+        Current message level: 0x00000000 (0)
+
+        Link detected: no
