@@ -1,0 +1,40 @@
+tested on OPNsense 24.7.1 
+
+~ # uname -mrs
+FreeBSD 14.1-RELEASE-p3 amd64
+
+### before ###
+
+bxe1: PCI BAR0 [10] memory allocated: 0xfd800000-0xfdffffff (8388608) -> 0xfffff800fd800000
+bxe1: PCI BAR2 [18] memory allocated: 0xfe000000-0xfe7fffff (8388608) -> 0xfffff800fe000000
+bxe1: PCI BAR4 [20] memory allocated: 0xfe810000-0xfe81ffff (65536) -> 0xfffff800fe810000
+bxe1: ERROR: Invalid NVRAM config link_config=0x00060300 speed_cap_mask=0x00700070
+bxe1: Found 10Gb Fiber media.
+bxe1: IFMEDIA flags : 20
+bxe1: Using defaults for TSO: 65518/35/2048
+bxe1: Ethernet address: 98:b7:85:1f:4a:c7
+bxe1: MSI-X vectors Requested 5 and Allocated 5
+NVRAM config error. Invalid link_config 0x60300  speed_cap_mask 0x700000
+...
+<13>1 2024-08-07T20:29:36+02:00 warlock.local kernel - - [meta sequenceId="618"] <6>bxe1: link state changed to UP
+<13>1 2024-08-07T20:29:36+02:00 warlock.local kernel - - [meta sequenceId="619"] bxe1: NIC Link is Up, 10000 Mbps full duplex, Flow control: ON - receive & transmit
+<13>1 2024-08-07T20:29:36+02:00 warlock.local kernel - - [meta sequenceId="620"] <6>bxe1: link state changed to DOWN
+<13>1 2024-08-07T20:29:36+02:00 warlock.local kernel - - [meta sequenceId="621"] <6>bxe1: link state changed to UP
+<13>1 2024-08-07T20:29:36+02:00 warlock.local kernel - - [meta sequenceId="622"] bxe1: NIC Link is Up, 10000 Mbps full duplex, Flow control: ON - receive & transmit
+<13>1 2024-08-07T20:29:36+02:00 warlock.local kernel - - [meta sequenceId="623"] <6>bxe1: link state changed to DOWN
+... (interface crash/loop)
+
+### after ###
+
+bxe1: <QLogic NetXtreme II BCM57810 10GbE [BELL BYPASS] (B0) BXE v:1.7> mem 0xfd800000-0xfdffffff,0xfe000000-0xfe7fffff,0xfe810000-0xfe81ffff irq 11 at device 11.0 on pci0
+bxe1: PCI BAR0 [10] memory allocated: 0xfd800000-0xfdffffff (8388608) -> 0xfffff800fd800000
+bxe1: PCI BAR2 [18] memory allocated: 0xfe000000-0xfe7fffff (8388608) -> 0xfffff800fe000000
+bxe1: PCI BAR4 [20] memory allocated: 0xfe810000-0xfe81ffff (65536) -> 0xfffff800fe810000
+bxe1: Found 2500Base-X media.
+bxe1: IFMEDIA flags : 20
+bxe1: Using defaults for TSO: 65518/35/2048
+bxe1: Ethernet address: 98:b7:85:1f:4a:c7
+bxe1: MSI-X vectors Requested 5 and Allocated 5
+...
+bxe1: link state changed to UP
+bxe1: NIC Link is Up, 2500 Mbps full duplex, Flow control: ON - receive & transmit
