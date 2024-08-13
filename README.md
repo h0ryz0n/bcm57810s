@@ -1,10 +1,10 @@
 playing with my network board, firmwares and drivers  
   
 hardware is a a 10Gtek® 10Gb PCI-E NIC Dual SFP+ Port board, chipset is a Broadcom BCM57810S  
-![immagine](https://github.com/user-attachments/assets/119dc822-6463-4fe9-9c6a-a75e25f76807)  
+
 server is a pure kvm/qemu debian hypervisor and board ports are configured in passthrough to a opnsense guest  
 as lots of 10G boards support just 1G/10G negotiation, it needs some tinkering to unlock 2.5G in order to couple with some ONT sticks    
-  
+![immagine](https://github.com/user-attachments/assets/a4325746-ef76-478f-abaf-d6eac02da406)  
 I'll keep here all my outputs and all the infos  
   
 you can find all informations on these links, thanks to original posters and all the people who contributes  
