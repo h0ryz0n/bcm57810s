@@ -5,7 +5,8 @@ hardware is a a 10Gtek® 10Gb PCI-E NIC Dual SFP+ Port board, chipset is a Broad
 server is a pure kvm/qemu debian hypervisor and board ports are configured in passthrough to a opnsense guest  
 as lots of 10G boards support just 1G/10G negotiation, it needs some tinkering to unlock 2.5G in order to couple with some ONT sticks    
 ![immagine](https://github.com/user-attachments/assets/a4325746-ef76-478f-abaf-d6eac02da406)  
-I'll keep here all my outputs and all the infos  
+I'll keep here all my outputs, drivers compiled, some src files and all the infos  
+
   
 you can find all informations on these links, thanks to original posters and all the people who contributes  
 original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC  
