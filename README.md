@@ -17,7 +17,12 @@ procedure by tonusoo on github: https://github.com/tonusoo/koduinternet-cpe/blob
   
 opnsense: https://forum.opnsense.org/index.php?topic=13664.msg62951#msg62951  
 opnsense pre-compiled: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
-  
+
+freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
+
+ 
 MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39696.0  
   
-freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
+interface ethernet keeps going down: a "no tx-fault" driver is needed to communicate with ONT stick
+  
+
