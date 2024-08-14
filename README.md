@@ -12,6 +12,9 @@ you can find all informations on these links, thanks to original posters and all
 original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC  
 original post patch: https://www.dslreports.com/forum/r32230853-  
 patch files: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches  
+  
+procedure by tonusoo on github: https://github.com/tonusoo/koduinternet-cpe/blob/main/README.md  
+  
 opnsense: https://forum.opnsense.org/index.php?topic=13664.msg62951#msg62951  
 opnsense pre-compiled: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
   
