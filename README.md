@@ -1,32 +1,26 @@
 playing with my network board, firmwares and drivers  
+I'll keep here all my outputs, drivers compiled, some src files, infos & notes
   
 hardware is a a 10Gtek® 10Gb PCI-E NIC Dual SFP+ Port board, chipset is a Broadcom BCM57810S  
-
-server is a pure kvm/qemu debian hypervisor and board ports are configured in passthrough to a opnsense guest  
-as lots of 10G boards support just 1G/10G negotiation, it needs some tinkering to unlock 2.5G in order to couple with some ONT sticks    
 ![immagine](https://github.com/user-attachments/assets/a4325746-ef76-478f-abaf-d6eac02da406)  
-I'll keep here all my outputs, drivers compiled, some src files and all the infos  
+server is a pure kvm/qemu debian hypervisor and board ports are configured in passthrough to a opnsense guest
 
-  
-you can find all informations on these links, thanks to original posters and all the people who contributes  
+as lots of 10G boards support just 1G/10G negotiation, it needs some tinkering to unlock 2.5G in order to couple with some ONT sticks    
+
 original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC  
 original post patch: https://www.dslreports.com/forum/r32230853-  
 
 patch files by JAMESMTL: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches  
 debian/ubuntu procedure by JAMESMTL: https://github.com/JAMESMTL/snippets/blob/master/bnx2x/ubuntu/README-dkms.md
-(interface not going up = need TX_FAULT patch)
   
 procedure by tonusoo on github: https://github.com/tonusoo/koduinternet-cpe/blob/main/README.md  
   
 opnsense: https://forum.opnsense.org/index.php?topic=13664.msg62951#msg62951  
 opnsense pre-compiled: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
+OpnSense MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39696.0  
 
 freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
 
- 
-MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39696.0  
-
+interface keeps going down if interface is not connected to fiber: need the "no tx-fault" patch and recompile +  conf file on /etc/modprobe.d/
   
-interface ethernet keeps going down: a "no tx-fault" driver is needed to communicate with ONT stick
-  
-
+thanks to original posters and all the people who contributes
