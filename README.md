@@ -9,6 +9,7 @@ as lots of 10G boards support just 1G/10G negotiation, it needs some tinkering t
 
 original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC  
 original post patch: https://www.dslreports.com/forum/r32230853-  
+hack MA5671A: https://hack-gpon.org/ont-huawei-ma5671a/
 
 patch files by JAMESMTL: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches  
 debian/ubuntu procedure by JAMESMTL: https://github.com/JAMESMTL/snippets/blob/master/bnx2x/ubuntu/README-dkms.md
