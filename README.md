@@ -21,6 +21,18 @@ OpnSense MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39
 
 freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
 
-interface keeps going down if interface is not connected to fiber: need the "no tx-fault" patch and recompile +  conf file on /etc/modprobe.d/
+issues i had:
+- interface keeps going down if sfp not connected to fiber (tx fault):
+need the "no tx-fault" patch and recompile + 
+*in /etc/modprobe.d/txfault_patch.conf
+options bnx2x debug=0x4102034
+options bnx2x mask_tx_fault=3  [or 1, 2 for single port]
+
+
+- interface keeps negotiating to 1000Mbps (check either sides):
+(eth side) ethtool -s <if> speed 2500 + check with ethtool <if>
+(sfp side) fw_setenv sgmii_mode 5 + check with onu lanpsg 0 for link_status=5
+
+
   
 thanks to original posters and all the people who contributes
