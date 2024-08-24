@@ -33,6 +33,5 @@ options bnx2x mask_tx_fault=3  [or 1, 2 for single port]
 (eth side) ethtool -s <if> speed 2500 + check with ethtool <if>
 (sfp side) fw_setenv sgmii_mode 5 + check with onu lanpsg 0 for link_status=5
 
-
   
-thanks to original posters and all the people who contributes
+thanks to original posters and all the people who contributes, they did an awesome work
