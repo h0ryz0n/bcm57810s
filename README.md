@@ -11,7 +11,10 @@ I'll keep here all my outputs, drivers compiled, some src files and all the info
 you can find all informations on these links, thanks to original posters and all the people who contributes  
 original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC  
 original post patch: https://www.dslreports.com/forum/r32230853-  
-patch files: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches  
+
+patch files by JAMESMTL: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches  
+debian/ubuntu procedure by JAMESMTL: https://github.com/JAMESMTL/snippets/blob/master/bnx2x/ubuntu/README-dkms.md
+(interface not going up = need TX_FAULT patch)
   
 procedure by tonusoo on github: https://github.com/tonusoo/koduinternet-cpe/blob/main/README.md  
   
@@ -22,6 +25,7 @@ freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe
 
  
 MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39696.0  
+
   
 interface ethernet keeps going down: a "no tx-fault" driver is needed to communicate with ONT stick
   
