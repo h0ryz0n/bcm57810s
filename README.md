@@ -32,12 +32,12 @@ options bnx2x mask_tx_fault=3  [or 1, 2 for single port]
 (eth side) ethtool -s <if> speed 2500 + check with ethtool <if>  
 (sfp side) fw_setenv sgmii_mode 5 + check with onu lanpsg 0 for link_status=5  
 
-- gpon access from debian host:
-*in /etc/network/interfaces
-auto enp2s0f1
-iface enp2s0f1 inet static
-       address 192.168.1.1/24
-       gateway 192.168.1.1
+- gpon access from debian host:  
+*in /etc/network/interfaces  
+auto enp2s0f1  
+iface enp2s0f1 inet static  
+       address 192.168.1.1/24  
+       gateway 192.168.1.1  
 
 
   
