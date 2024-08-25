@@ -103,10 +103,20 @@ Output Parameter
   
 **some issues I had**
 - interface keeps going down if sfp not connected to fiber (tx fault):  
-need the "no tx-fault" patch and recompile +   
-*in /etc/modprobe.d/txfault_patch.conf  
+get a patch which disables the "tx-fault" check and recompile + check modprobe  
+*in /etc/modprobe.d/txfault_patch.conf (debian-based)  
 options bnx2x debug=0x4102034  
 options bnx2x mask_tx_fault=3  [or 1, 2 for single port]  
+*in /boot/loader.conf.local (bsd based)  
+# Fix states issues  
+hw.bxe.interrupt_mode="1"  
+net.inet.tcp.tso="0"  
+# Force load module  
+if_bxe_load="YES"  
+# TX_FAULT MASK  
+hw.bxe.mask_tx_fault=3  
+hw.bxe.debug=0x00000041  
+
   
 - interface keeps negotiating to 1000Mbps (check either sides):  
 eth side  
