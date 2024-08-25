@@ -51,7 +51,7 @@ ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-rsa roo
 gpon states:
 https://forum.huawei.com/enterprise/en/gpon-introduction-common-ploam-message-using-in-gpon-system/thread/667284668879355904-667213871523442688
 
-root@SFP:~# onu lanpsg -h
+root@SFP:~# onu lanpsg -h  
 Long Form: lan_port_status_get
 Short Form: lanpsg
 
@@ -94,7 +94,7 @@ Output Parameter
    LAN_PHY_MODE_DUPLEX_HALF = 2
    LAN_PHY_MODE_DUPLEX_UNKNOWN = 3
 
-root@SFP:~# onu ploamsg -h
+root@SFP:~# onu ploamsg -h  
 Long Form: ploam_state_get
 Short Form: ploamsg
 
