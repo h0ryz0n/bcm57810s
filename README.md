@@ -109,8 +109,11 @@ options bnx2x debug=0x4102034
 options bnx2x mask_tx_fault=3  [or 1, 2 for single port]  
   
 - interface keeps negotiating to 1000Mbps (check either sides):  
-(eth side) ethtool -s enp2s0f1 speed 2500 + check with ethtool enp2s0f1  
-(sfp side) fw_setenv sgmii_mode 5 + check with onu lanpsg 0 for link_status=5  
+eth side
+ethtool -s enp2s0f1 speed 2500 + check with ethtool enp2s0f1  
+ifconfig bxe1 media 2500Base-X mediaopt fullduplex
+sfp side
+fw_setenv sgmii_mode 5 + check with onu lanpsg 0 for link_status=5  
   
 - gpon access from debian host (modded ma5671A sfp has ip 192.168.1.10 and no dhcp):  
 *in /etc/network/interfaces  
