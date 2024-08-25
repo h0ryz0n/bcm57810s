@@ -108,12 +108,12 @@ get a patch which disables the "tx-fault" check and recompile + check modprobe
 options bnx2x debug=0x4102034  
 options bnx2x mask_tx_fault=3  [or 1, 2 for single port]  
 *in /boot/loader.conf.local (bsd based)  
-# Fix states issues  
+#Fix states issues  
 hw.bxe.interrupt_mode="1"  
 net.inet.tcp.tso="0"  
-# Force load module  
+#Force load module  
 if_bxe_load="YES"  
-# TX_FAULT MASK  
+#TX_FAULT MASK  
 hw.bxe.mask_tx_fault=3  
 hw.bxe.debug=0x00000041  
 
