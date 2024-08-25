@@ -25,8 +25,8 @@ OpnSense MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39
 freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
   
 check MA5671A states: onu lanpsg 0 + onu ploamsg  
-
-
+  
+  
   
 **link states**
 
@@ -37,10 +37,7 @@ https://www.draytek.co.uk/information/blog/gpon-fibre-onu-subscriber-modem-activ
 root@SFP:~# onu lanpsg -h  
 Long Form: lan_port_status_get
 Short Form: lanpsg
-
-Input Parameter
-- uint32_t pport
-
+Input Parameter - uint32_t pport
 Output Parameter
 - enum onu_errorcode errorcode
 - uint32_t pport
@@ -80,7 +77,6 @@ Output Parameter
 root@SFP:~# onu ploamsg -h  
 Long Form: ploam_state_get
 Short Form: ploamsg
-
 Output Parameter
 - enum onu_errorcode errorcode
 - enum ploam_state curr_state
@@ -102,8 +98,8 @@ Output Parameter
    PLOAM_STATE_O6 = 6
    PLOAM_STATE_O7 = 7
 - uint32_t elapsed_msec
-
-
+  
+  
   
 **some issues I had**
 - interface keeps going down if sfp not connected to fiber (tx fault):  
