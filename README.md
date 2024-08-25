@@ -22,9 +22,7 @@ OpnSense MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39
 
 freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
   
-check MA5671A state:  
-onu lanpsg 0  
-onu ploamsg  
+check MA5671A states: onu lanpsg 0 + onu ploamsg  
   
 issues i had:  
 - interface keeps going down if sfp not connected to fiber (tx fault):  
