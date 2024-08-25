@@ -30,18 +30,18 @@ options bnx2x debug=0x4102034
 options bnx2x mask_tx_fault=3  [or 1, 2 for single port]  
   
 - interface keeps negotiating to 1000Mbps (check either sides):  
-(eth side) ethtool -s enp2s0f1 speed 2500 + check with ethtool enp2s0f1
+(eth side) ethtool -s enp2s0f1 speed 2500 + check with ethtool enp2s0f1  
 (sfp side) fw_setenv sgmii_mode 5 + check with onu lanpsg 0 for link_status=5  
-
+  
 - gpon access from debian host (modded ma5671A sfp has ip 192.168.1.10 and no dhcp):  
 *in /etc/network/interfaces  
 auto enp2s0f1  
 iface enp2s0f1 inet static  
        address 192.168.1.1/24  
        gateway 192.168.1.1  
-
+  
 - ssh to sfp stick - deprecated algorythms errror: "Unable to negotiate with 192.168.1.10 port 22: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1,diffie-hellman-group1-sha1,kexguess2@matt.ucc.asn.au"  
 ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss root@192.168.1.10  
-
+  
   
 thanks to original posters and all the people who contributes, they did an awesome work  
