@@ -103,10 +103,11 @@ Output Parameter
   
 **some issues I had**
 - interface keeps going down if sfp not connected to fiber (tx fault):  
-get a patch which disables the "tx-fault" check and recompile + check modprobe  
+get a patch which disables the "tx-fault" check and recompile + check modprobe
+tx_fault mask is 0=disabled, 1 or 2=enabled for single port, 3=enabled for both ports  
 *in /etc/modprobe.d/txfault_patch.conf (debian-based)  
 options bnx2x debug=0x4102034  
-options bnx2x mask_tx_fault=3  [or 1, 2 for single port]  
+options bnx2x mask_tx_fault=3  
 *in /boot/loader.conf.local (bsd based)  
 #Fix states issues  
 hw.bxe.interrupt_mode="1"  
