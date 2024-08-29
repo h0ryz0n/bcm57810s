@@ -28,7 +28,7 @@ check MA5671A states: onu lanpsg 0 + onu ploamsg
   
   
   
-**link states**
+****link states****
   
 gpon states + some theory:
 https://forum.huawei.com/enterprise/en/gpon-introduction-common-ploam-message-using-in-gpon-system/thread/667284668879355904-667213871523442688
@@ -100,7 +100,7 @@ Output Parameter
 - uint32_t elapsed_msec
   
   
-**PPPoE connection & states**  
+****PPPoE connection & states****
   
 create vlan01  
 create pppoe connection -> related to vlan  
@@ -115,7 +115,7 @@ PADR - PPPoE Active Discovery Request
 PADS - PPPoE Active Discovery Session-confirmation
 PADT - PPPoE Active Discovery Termination 
 
-**some issues I had**
+****some issues I had****
 - interface keeps going down if sfp not connected to fiber (tx fault):  
 get a patch which disables the "tx-fault" check and recompile + check modprobe
 tx_fault mask is 0=disabled, 1 or 2=enabled for single port, 3=enabled for both ports  
