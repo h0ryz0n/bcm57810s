@@ -29,7 +29,7 @@ check MA5671A states: onu lanpsg 0 + onu ploamsg
   
   
 **link states**
-
+  
 gpon states + some theory:
 https://forum.huawei.com/enterprise/en/gpon-introduction-common-ploam-message-using-in-gpon-system/thread/667284668879355904-667213871523442688
 https://www.draytek.co.uk/information/blog/gpon-fibre-onu-subscriber-modem-activation  
@@ -98,7 +98,7 @@ Output Parameter
    PLOAM_STATE_O6 = 6
    PLOAM_STATE_O7 = 7
 - uint32_t elapsed_msec
-
+  
   
 **PPPoE connection & states**  
   
