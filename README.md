@@ -98,9 +98,23 @@ Output Parameter
    PLOAM_STATE_O6 = 6
    PLOAM_STATE_O7 = 7
 - uint32_t elapsed_msec
+
   
+**PPPoE connection & states**  
   
+create vlan01  
+create pppoe connection -> related to vlan  
+assign interface -> pppoe  
+debugging: dmesg, /var/log/messages.log, tcpdump -vvvvvv -i xxxxx  
   
+https://forum.huawei.com/enterprise/en/wan-basics-pppoe/thread/667246677108604928-667213852955258880
+https://it.wikipedia.org/wiki/PPPoE
+PADI - PPPoE Active Discovery Initiation
+PADO - PPPoE Active Discovery Offer
+PADR - PPPoE Active Discovery Request
+PADS - PPPoE Active Discovery Session-confirmation
+PADT - PPPoE Active Discovery Termination 
+
 **some issues I had**
 - interface keeps going down if sfp not connected to fiber (tx fault):  
 get a patch which disables the "tx-fault" check and recompile + check modprobe
@@ -136,9 +150,6 @@ iface enp2s0f1 inet static
 - ssh to sfp stick - deprecated algorythms errror: "Unable to negotiate with 192.168.1.10 port 22: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1,diffie-hellman-group1-sha1,kexguess2@matt.ucc.asn.au"  
 ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss root@192.168.1.10  
 ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-rsa root@192.168.1.10  
-
-
-
 
   
 **big thanks to original posters and all the people who contributes, they did an awesome work**  
