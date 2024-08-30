@@ -108,8 +108,8 @@ create pppoe connection -> related to vlan
 assign interface -> pppoe  
 debugging: dmesg, /var/log/messages.log, tcpdump -vvvvvv -i xxxxx  
   
-https://forum.huawei.com/enterprise/en/wan-basics-pppoe/thread/667246677108604928-667213852955258880
-https://it.wikipedia.org/wiki/PPPoE
+https://forum.huawei.com/enterprise/en/wan-basics-pppoe/thread/667246677108604928-667213852955258880  
+https://it.wikipedia.org/wiki/PPPoE  
 PADI - PPPoE Active Discovery Initiation
 PADO - PPPoE Active Discovery Offer
 PADR - PPPoE Active Discovery Request
