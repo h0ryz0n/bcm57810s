@@ -31,8 +31,8 @@ check MA5671A states: onu lanpsg 0 + onu ploamsg
   
 **>>> link states**
   
-gpon states + some theory:
-https://forum.huawei.com/enterprise/en/gpon-introduction-common-ploam-message-using-in-gpon-system/thread/667284668879355904-667213871523442688
+gpon states + some theory:  
+https://forum.huawei.com/enterprise/en/gpon-introduction-common-ploam-message-using-in-gpon-system/thread/667284668879355904-667213871523442688  
 https://www.draytek.co.uk/information/blog/gpon-fibre-onu-subscriber-modem-activation  
   
 root@SFP:~# onu lanpsg -h  
