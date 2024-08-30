@@ -7,21 +7,22 @@ hardware is a a 10Gtek® 10Gb PCI-E NIC Dual SFP+ Port board, chipset is a Broad
   
 server is a pure kvm/qemu debian hypervisor and board ports are configured in passthrough to a opnsense guest
 
-as lots of 10G boards support just 1G/10G negotiation, it needs some tinkering to unlock 2.5G in order to couple with some ONT sticks    
-
+as lots of 10G boards support just 1G/10G negotiation, it needs some tinkering to unlock 2.5G in order to couple with some ONT sticks  
+when fiber is not connected/you are not in O5, you could incurr in the tx fault problem = interface keeps being down at OS level, the reason is explained in links below  
+  
 original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC  
 original post patch: https://www.dslreports.com/forum/r32230853-  
-hack MA5671A: https://hack-gpon.org/ont-huawei-ma5671a/
-
+hack MA5671A: https://hack-gpon.org/ont-huawei-ma5671a/  
+  
 patch files by JAMESMTL: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches  
-debian/ubuntu procedure by JAMESMTL: https://github.com/JAMESMTL/snippets/blob/master/bnx2x/ubuntu/README-dkms.md
+debian/ubuntu procedure by JAMESMTL: https://github.com/JAMESMTL/snippets/blob/master/bnx2x/ubuntu/README-dkms.md  
   
 procedure by tonusoo on github: https://github.com/tonusoo/koduinternet-cpe/blob/main/README.md  
   
 opnsense: https://forum.opnsense.org/index.php?topic=13664.msg62951#msg62951  
 opnsense pre-compiled: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
 OpnSense MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39696.0  
-
+  
 freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
   
 check MA5671A states: onu lanpsg 0 + onu ploamsg  
