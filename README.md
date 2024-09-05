@@ -25,10 +25,10 @@ opnsense pre-compiled: https://bxe.c-maxwell.net/en/Opnsense/modified_modules
 OpnSense MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39696.0  
   
 freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
+freebsd tutorial and precompiled modules: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
+  
   
 check MA5671A states: onu lanpsg 0 + onu ploamsg  
-  
-  
   
 **>>> link states**
   
