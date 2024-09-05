@@ -1,5 +1,5 @@
 playing with my network board, firmwares and drivers  
-this repo is intended as a collection of material found on internet  
+this repo is intended as a collection of material found on internet with some comments I added  
 I'll keep here all my outputs, drivers compiled, some src files, infos & notes  
   
 hardware is a a 10Gtek® 10Gb PCI-E NIC Dual SFP+ Port board, chipset is a Broadcom BCM57810S  
