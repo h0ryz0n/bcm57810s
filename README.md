@@ -1,12 +1,13 @@
 playing with my network board, firmwares and drivers  
-I'll keep here all my outputs, drivers compiled, some src files, infos & notes
+this repo is intended as a collection of material found on internet  
+I'll keep here all my outputs, drivers compiled, some src files, infos & notes  
   
 hardware is a a 10Gtek® 10Gb PCI-E NIC Dual SFP+ Port board, chipset is a Broadcom BCM57810S  
   
 ![immagine](https://github.com/user-attachments/assets/a4325746-ef76-478f-abaf-d6eac02da406)  
   
-server is a pure kvm/qemu debian hypervisor and board ports are configured in passthrough to a opnsense guest
-
+server is a pure kvm/qemu debian hypervisor and board ports are configured in passthrough to a opnsense guest  
+  
 as lots of 10G boards support just 1G/10G negotiation, it needs some tinkering to unlock 2.5G in order to couple with some ONT sticks  
 when fiber is not connected/you are not in O5, you could incurr in the tx fault problem = interface keeps being down at OS level, the reason is explained in links below  
   
@@ -116,7 +117,7 @@ PADR - PPPoE Active Discovery Request
 PADS - PPPoE Active Discovery Session-confirmation
 PADT - PPPoE Active Discovery Termination 
   
-****>>>some issues I had****  
+****>>>some issues that may happen****  
   
 - interface keeps going down if sfp not connected to fiber (tx fault):  
 get a patch which disables the "tx-fault" check and recompile + check modprobe
@@ -151,7 +152,15 @@ iface enp2s0f1 inet static
   
 - ssh to sfp stick - deprecated algorythms errror: "Unable to negotiate with 192.168.1.10 port 22: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1,diffie-hellman-group1-sha1,kexguess2@matt.ucc.asn.au"  
 ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss root@192.168.1.10  
-ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-rsa root@192.168.1.10  
-
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-rsa root@192.168.1.10
+  
+- OPNSense upgrade failed:  
+Installing kernel-24.7.3-amd64.txz...rm: /boot/kernel.old/if_bxe.ko: Operation not permitted  
+rm: /boot/kernel.old: Directory not empty  
+ failed, rm error 0  
+you forget to: chflags noschg /boot/kernel/if_bxe.ko  
+upgrade everything, copy the modified module and put the immutable flag again  
+  
   
 **big thanks to original posters and all the people who contributes, they did an awesome work**  
+  
