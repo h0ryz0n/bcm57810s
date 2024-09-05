@@ -21,11 +21,11 @@ debian/ubuntu procedure by JAMESMTL: https://github.com/JAMESMTL/snippets/blob/m
 procedure by tonusoo on github: https://github.com/tonusoo/koduinternet-cpe/blob/main/README.md  
   
 opnsense: https://forum.opnsense.org/index.php?topic=13664.msg62951#msg62951  
-opnsense pre-compiled: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
 OpnSense MA5671A no carrier issue: https://forum.opnsense.org/index.php?topic=39696.0  
   
 freebsd src: https://github.com/freebsd/freebsd-src/tree/main/sys/dev/bxe  
-freebsd tutorial and precompiled modules: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
+  
+freebsd & various distros - tutorial and precompiled modules: https://bxe.c-maxwell.net/en/Opnsense/modified_modules  
   
   
 check MA5671A states: onu lanpsg 0 + onu ploamsg  
