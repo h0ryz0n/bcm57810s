@@ -14,6 +14,8 @@ when fiber is not connected/you are not in O5, you could incurr in the tx fault 
 original post: https://www.dslreports.com/forum/r32230041-Internet-Bypassing-the-HH3K-up-to-2-5Gbps-using-a-BCM57810S-NIC  
 original post patch: https://www.dslreports.com/forum/r32230853-  
 hack MA5671A: https://hack-gpon.org/ont-huawei-ma5671a/  
+
+other post on github for steps: https://github.com/Berzerker/google-fiber-2gbps-bypass/blob/main/README.md
   
 patch files by JAMESMTL: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches  
 debian/ubuntu procedure by JAMESMTL: https://github.com/JAMESMTL/snippets/blob/master/bnx2x/ubuntu/README-dkms.md  
