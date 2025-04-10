@@ -16,6 +16,7 @@ original post patch: https://www.dslreports.com/forum/r32230853-
 hack MA5671A: https://hack-gpon.org/ont-huawei-ma5671a/  
 
 other post on github for steps: https://github.com/Berzerker/google-fiber-2gbps-bypass/blob/main/README.md
+on reddit: https://www.reddit.com/r/googlefiber/comments/lscvj5/2gbps_gateway_bypass_confirmed_full_speed_working/
   
 patch files by JAMESMTL: https://github.com/JAMESMTL/snippets/tree/master/bnx2x/patches  
 debian/ubuntu procedure by JAMESMTL: https://github.com/JAMESMTL/snippets/blob/master/bnx2x/ubuntu/README-dkms.md  
