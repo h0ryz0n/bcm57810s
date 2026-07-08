@@ -47,65 +47,65 @@ Output Parameter
 - enum onu_errorcode errorcode
 - uint32_t pport
 - enum lan_mode_interface mode
-   LAN_MODE_OFF = 0
-   LAN_MODE_GPHY = 1
-   LAN_MODE_EPHY = 2
-   LAN_MODE_SGMII = 3
-   LAN_MODE_SGMII_FAST = 4
-   LAN_MODE_RGMII_MAC = 5
-   LAN_MODE_RMII_MAC = 6
-   LAN_MODE_RMII_PHY = 7
-   LAN_MODE_GMII_MAC = 8
-   LAN_MODE_GMII_PHY = 9
-   LAN_MODE_MII_MAC = 10
-   LAN_MODE_MII_PHY = 11
-   LAN_MODE_TMII_MAC = 12
-   LAN_MODE_TMII_PHY = 13
-   LAN_MODE_TBI_SERDES = 14
-   LAN_MODE_TBI_AUTODETECT = 15
-- uint32_t enable
-- enum lan_phy_status link_status
-   LAN_PHY_STATUS_OFF = 0
-   LAN_PHY_STATUS_DOWN = 1
-   LAN_PHY_STATUS_10_UP = 2
-   LAN_PHY_STATUS_100_UP = 3
-   LAN_PHY_STATUS_1000_UP = 4
-   LAN_PHY_STATUS_2500_UP = 5
-   LAN_PHY_STATUS_NONE = 6
-   LAN_PHY_STATUS_UNKNOWN = 255
-- enum lan_mode_duplex phy_duplex
-   LAN_PHY_MODE_DUPLEX_AUTO = 0
-   LAN_PHY_MODE_DUPLEX_FULL = 1
-   LAN_PHY_MODE_DUPLEX_HALF = 2
-   LAN_PHY_MODE_DUPLEX_UNKNOWN = 3
+   LAN_MODE_OFF = 0  
+   LAN_MODE_GPHY = 1  
+   LAN_MODE_EPHY = 2  
+   LAN_MODE_SGMII = 3  
+   LAN_MODE_SGMII_FAST = 4  
+   LAN_MODE_RGMII_MAC = 5  
+   LAN_MODE_RMII_MAC = 6  
+   LAN_MODE_RMII_PHY = 7  
+   LAN_MODE_GMII_MAC = 8  
+   LAN_MODE_GMII_PHY = 9  
+   LAN_MODE_MII_MAC = 10  
+   LAN_MODE_MII_PHY = 11  
+   LAN_MODE_TMII_MAC = 12  
+   LAN_MODE_TMII_PHY = 13  
+   LAN_MODE_TBI_SERDES = 14  
+   LAN_MODE_TBI_AUTODETECT = 15  
+- uint32_t enable  
+- enum lan_phy_status link_status  
+   LAN_PHY_STATUS_OFF = 0  
+   LAN_PHY_STATUS_DOWN = 1  
+   LAN_PHY_STATUS_10_UP = 2  
+   LAN_PHY_STATUS_100_UP = 3  
+   LAN_PHY_STATUS_1000_UP = 4  
+   LAN_PHY_STATUS_2500_UP = 5  
+   LAN_PHY_STATUS_NONE = 6  
+   LAN_PHY_STATUS_UNKNOWN = 255  
+- enum lan_mode_duplex phy_duplex  
+   LAN_PHY_MODE_DUPLEX_AUTO = 0  
+   LAN_PHY_MODE_DUPLEX_FULL = 1  
+   LAN_PHY_MODE_DUPLEX_HALF = 2  
+   LAN_PHY_MODE_DUPLEX_UNKNOWN = 3  
   
 root@SFP:~# onu ploamsg -h  
-Long Form: ploam_state_get
-Short Form: ploamsg
-Output Parameter
-- enum onu_errorcode errorcode
-- enum ploam_state curr_state
-   PLOAM_STATE_O0 = 0 
-   PLOAM_STATE_O1 = 1 (init) 
-   PLOAM_STATE_O2 = 2 (standby/holding) 
-   PLOAM_STATE_O3 = 3 (serial number) 
-   PLOAM_STATE_O4 = 4 (ranging/distance measuring) 
-   PLOAM_STATE_O5 = 5 (operational/running) 
-   PLOAM_STATE_O6 = 6 (popup) 
-   PLOAM_STATE_O7 = 7 (urgent halt) 
-- enum ploam_state previous_state
-   PLOAM_STATE_O0 = 0
-   PLOAM_STATE_O1 = 1
-   PLOAM_STATE_O2 = 2
-   PLOAM_STATE_O3 = 3
-   PLOAM_STATE_O4 = 4
-   PLOAM_STATE_O5 = 5
-   PLOAM_STATE_O6 = 6
-   PLOAM_STATE_O7 = 7
-- uint32_t elapsed_msec
+Long Form: ploam_state_get  
+Short Form: ploamsg  
+Output Parameter  
+- enum onu_errorcode errorcode  
+- enum ploam_state curr_state  
+   PLOAM_STATE_O0 = 0  
+   PLOAM_STATE_O1 = 1 (init)  
+   PLOAM_STATE_O2 = 2 (standby/holding)  
+   PLOAM_STATE_O3 = 3 (serial number)  
+   PLOAM_STATE_O4 = 4 (ranging/distance measuring)  
+   PLOAM_STATE_O5 = 5 (operational/running)  
+   PLOAM_STATE_O6 = 6 (popup)  
+   PLOAM_STATE_O7 = 7 (urgent halt)  
+- enum ploam_state previous_state  
+   PLOAM_STATE_O0 = 0  
+   PLOAM_STATE_O1 = 1  
+   PLOAM_STATE_O2 = 2  
+   PLOAM_STATE_O3 = 3  
+   PLOAM_STATE_O4 = 4  
+   PLOAM_STATE_O5 = 5  
+   PLOAM_STATE_O6 = 6  
+   PLOAM_STATE_O7 = 7  
+- uint32_t elapsed_msec  
   
   
-**>>> PPPoE connection & states**
+**>>> PPPoE connection & states**  
   
 create vlan01  
 create pppoe connection -> related to vlan  
