@@ -33,7 +33,7 @@ freebsd & various distros - tutorial and precompiled modules: https://bxe.c-maxw
   
 check MA5671A states: onu lanpsg 0 + onu ploamsg  
   
-**>>> link states**
+**### link states ###**
   
 gpon states + some theory:  
 https://forum.huawei.com/enterprise/en/gpon-introduction-common-ploam-message-using-in-gpon-system/thread/667284668879355904-667213871523442688  
@@ -105,7 +105,7 @@ Output Parameter
 - uint32_t elapsed_msec  
   
   
-**>>> PPPoE connection & states**  
+**### PPPoE connection & states ###**  
   
 create vlan01  
 create pppoe connection -> related to vlan  
@@ -120,7 +120,7 @@ PADR - PPPoE Active Discovery Request
 PADS - PPPoE Active Discovery Session-confirmation
 PADT - PPPoE Active Discovery Termination 
   
-****>>>some issues that may happen****  
+****### some issues that may happen ###****  
   
 - interface keeps going down if sfp not connected to fiber (tx fault):  
 get a patch which disables the "tx-fault" check and recompile + check modprobe
@@ -136,8 +136,7 @@ net.inet.tcp.tso="0"
 if_bxe_load="YES"  
 #TX_FAULT MASK  
 hw.bxe.mask_tx_fault=3  
-hw.bxe.debug=0x00000041  
-
+hw.bxe.debug=0x00000041
   
 - interface keeps negotiating to 1000Mbps (check either sides):  
 eth side  
